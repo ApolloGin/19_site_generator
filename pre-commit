@@ -1,5 +1,5 @@
 #!/bin/bash
 if [[ `git status -s` > /dev/null ]]; then
-	python3.5 site_generator.py config.json
+	python3.5 site_generator.py
 	git add site
 fi
