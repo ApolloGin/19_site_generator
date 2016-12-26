@@ -24,11 +24,11 @@ def create_site_structure(config):
         )
         for article in articles:
             title = article['title']
-            directory, file = os.path.split(article['source'])
-            file = file.replace('md', 'html')
-            href = os.path.join(directory, file)
+            directory, file_name = os.path.split(article['source'])
+            file_name = file_name.replace('md', 'html')
+            href = os.path.join(directory, file_name)
             directory_structure = os.path.join(SITE_DIRECTORY, directory)
-            full_html_path = os.path.join(directory_structure, file)
+            full_html_path = os.path.join(directory_structure, file_name)
             html_path = full_html_path
             site_structure[-1][1].append({
                 'source': article['source'],
@@ -42,7 +42,7 @@ def create_site_structure(config):
 def create_articles(site_structure, template):
     for _, articles in site_structure:
         for article in articles:
-            directory, file = os.path.split(article['html_path'])
+            directory, file_name = os.path.split(article['html_path'])
             if not os.path.exists(directory):
                 os.makedirs(directory)
 
