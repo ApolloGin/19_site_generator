@@ -5,7 +5,7 @@ from jinja2 import Environment, PackageLoader
 from markdown import markdown
 
 CONFIG_PATH = 'config.json'
-SITE_DIRECTORY = 'site'
+SITE_DIRECTORY = 'docs'
 
 def read_config(path):
     with open(path, 'r') as file_with_json:
