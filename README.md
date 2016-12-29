@@ -2,7 +2,7 @@
 
 ## Synopsis
 
-Script creates simple static site from articles are written on markdown. It convert markdown to html and collect them to the static site.
+Script creates simple static site from articles are written on markdown. It convert markdown to html and collect them to the static site. Example of the site available [here](https://apollogin.github.io/19_site_generator/).
 
 ## Quick start
 
