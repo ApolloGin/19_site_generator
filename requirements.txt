@@ -1,2 +1,2 @@
-Jinja2
+Jinja2==2.8.1
 Markdown==2.6.7
